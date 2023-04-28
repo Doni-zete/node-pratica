@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+
+    height: 800px
+}
+  
+  img {
+    width: 50%;
+    height: 800px;
+    position: absolute;
+
+  }
