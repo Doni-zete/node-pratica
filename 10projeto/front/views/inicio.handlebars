@@ -1,0 +1,35 @@
+<section class="container-fluid bg-warning text-center p-5">
+  <fieldset>
+    <legend for="">Dados do Cliente Vila Oculta da Folha</legend>
+    <form action="/cadastrar" method="POST">
+      <img src="imagens/icone.png" alt="" srcset="" />
+      <input type="text" placeholder="Nome" name="nome" class="form-control" />
+      <input type="text" placeholder="Idade" name="idade" class="form-control" />
+      <input type="submit" value="Cadastrar" class="btn btn-success" />
+    </form>
+
+  </fieldset>
+</section>
+
+<section class="container-fluid bs-warning-bg-subtle text-center p-5">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Selecionar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each dados}}
+        <tr>
+          <td>{{nome}}</td>
+          <td>{{idade}}</td>
+          <td><a href="selecionar/{{id}} "class="btn btn-success">Selecionar</a></td>
+        </tr>
+
+      {{/each}}
+    </tbody>
+  </table>
+</section>

@@ -1,0 +1,54 @@
+{
+  "clientes": [
+    {
+      "nome": "Yondaime",
+      "idade": 27,
+      "id": 1
+    },
+    {
+      "nome": "Naruto",
+      "idade": "12",
+      "id": 3
+    },
+    {
+      "nome": "Sakura",
+      "idade": "13",
+      "id": 4
+    },
+    {
+      "nome": "Kakashi",
+      "idade": "26",
+      "id": 5
+    },
+    {
+      "nome": "Deidara",
+      "idade": "35",
+      "id": 6
+    },
+    {
+      "nome": "Orochimaru",
+      "idade": "50",
+      "id": 7
+    },
+    {
+      "nome": "Tsunade",
+      "idade": "51",
+      "id": 8
+    },
+    {
+      "nome": "Jiraiya",
+      "idade": "50",
+      "id": 9
+    },
+    {
+      "nome": "Might Guy",
+      "idade": "27",
+      "id": 10
+    },
+    {
+      "nome": "Rock Lee",
+      "idade": "14",
+      "id": 11
+    }
+  ]
+}
