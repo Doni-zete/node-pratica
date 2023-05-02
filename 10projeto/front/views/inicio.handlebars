@@ -1,6 +1,6 @@
 <section class="container-fluid bg-warning text-center p-5">
   <fieldset>
-    <legend for="">Dados do Cliente Vila Oculta da Folha</legend>
+    <legend for="">Dados dos Cliente da Vila Oculta da Folha</legend>
     <form action="/cadastrar" method="POST">
       <img src="imagens/icone.png" alt="" srcset="" />
       <input type="text" placeholder="Nome" name="nome" class="form-control" />
@@ -17,7 +17,7 @@
       <tr>
         <th>Nome</th>
         <th>Idade</th>
-        <th>Selecionar</th>
+        <th>Editar</th>
       </tr>
     </thead>
 
@@ -26,7 +26,7 @@
         <tr>
           <td>{{nome}}</td>
           <td>{{idade}}</td>
-          <td><a href="selecionar/{{id}} "class="btn btn-success">Selecionar</a></td>
+          <td><a href="selecionar/{{id}} "class="btn btn-primary">Editar</a></td>
         </tr>
 
       {{/each}}
