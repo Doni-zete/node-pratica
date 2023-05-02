@@ -3,3 +3,21 @@
 <div class="container">
   <img src="../imgs/yondaime.jpg" alt="" />
 </div>
+
+{{#if gostandoDeNode}}
+  <p>Que Legal</p>
+{{else}}
+  <p>Que pena</p>
+
+{{/if}}
+
+<table>
+  {{#each dados}}
+    <tr>
+            
+      <td>{{nome}}</td>
+      <td>{{idade}}</td>
+    </tr>
+  {{/each}}
+
+</table>

@@ -5,6 +5,7 @@ var exphbs = require("express-handlebars");
 //App
 var app = express();
 
+//Template
 app.engine("handlebars", exphbs({ defaultLayout: "minhaPagina" }));
 app.set("view engine", "handlebars");
 
@@ -12,14 +13,21 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + '/publico'));
 
 
-//rotas
+//Rotas
 app.get("/", function (req, res) {
-  res.render("inicio");
+let pessoas =[
+  
+  {"nome": "Yondaime", "idade":27},
+  {"nome": "Naruto", "idade": 15},
+  {"nome": "Jiraya","idade":54}
+]
+
+  res.render("inicio", {gostandoDeNode:false, dados:pessoas});
 });
 
 app.get("/sobre", function (req, res) {
   res.render("sobre");
 });
 
-// servidor
+// Servidor
 app.listen(3000);
